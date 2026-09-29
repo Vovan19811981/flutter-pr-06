@@ -1,17 +1,20 @@
 import 'package:flutter/material.dart';
 
+import '../state/counter_scope.dart';
+
 class HistoryBadge extends StatelessWidget {
   const HistoryBadge({
     super.key,
-    required this.count,
     this.onPressed,
   });
 
-  final int count;
   final VoidCallback? onPressed;
 
   @override
   Widget build(BuildContext context) {
+    debugPrint('build: HistoryBadge');
+    final int count = CounterScope.of(context).history.length;
+
     final Widget badge = Stack(
       clipBehavior: Clip.none,
       children: <Widget>[
