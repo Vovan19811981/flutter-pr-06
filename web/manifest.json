@@ -1,0 +1,11 @@
+{
+  "name": "Лічильник",
+  "short_name": "Лічильник",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#3F51B5",
+  "description": "State management practical application",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false
+}
